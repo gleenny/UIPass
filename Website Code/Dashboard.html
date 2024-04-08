@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="styleDashboard.css">
+    <!--Poppins Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Whisper&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "container">
+        <div class = "user">
+            <div class ="userInfo">
+                <img src = "picture.jpg" alt ="User picture">
+                <h3 class ="userName">NAME</h3>
+                <p>Disciplinary Officer</p>
+                <br>
+                <br>
+            </div>
+        
+            <div class = "navleft">
+                <button>Dashboard</button>
+                <button>List of Report</button>
+                <button>Temporary ID</button>
+                <button>Uniform Check</button>
+                <button>Settings</button>
+
+            </div>
+                <form action = "Login.html">
+                    <button class="LogOutBtn">Logout</button>
+                </form>
+        </div>
+
+        <div class = "dashboard">
+            <h1>Dashboard</h1>
+            <!--IF ELSE BUTTON-->
+            <button>SHS</button>
+            <button>Tertiary</button> <br> <br>
+            <div class = "uList">
+                <!--List of uniforms-->
+                <div class ="uItems">
+                    <p class="AvailableUniformsTxt">Available Uniforms</p>
+                    <!--Generate the list of Available Uniforms Announcements-->  
+                    <p>Uniform 1</p>
+                    <p>Uniform 2</p>
+                </div>
+            </div>
+        </div>
+
+        <div class = "records">
+            <h4>Recent Records</h4>
+            <div class = "updatedRecords">
+                <!--Recent records List-->
+                <!--Generate the new reports list-->
+                <div class = "recordList">
+                    <p>Record 1</p>
+                </div>
+                <div class = "recordList">
+                    <p>Record 2</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
