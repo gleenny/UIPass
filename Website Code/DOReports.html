@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="DO-Reports.css">
+    <!--Poppins Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Whisper&display=swap" rel="stylesheet">
+    <title>Reports</title>
+</head>
+<body>
+    <div class="container">
+        <div class="user">
+            <div class="userInfo">
+                <img src="profile1.png" alt="User picture">
+                <h3 class="userName">NAME</h3>
+                <p>Disciplinary Officer</p>
+            </div>
+        
+            <div class="navleft">
+                <a href="Dashboard.html"><button>Dashboard</button></a>
+                <a href="DOReports.html"><button>List of Report</button></a>
+                <button>Temporary ID</button>
+                <button>Uniform Check</button>
+                <button>Settings</button>
+                <form action="Login.html">
+                    <button class="LogOutBtn">Logout</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="List">
+            <h1>List of Reports</h1>
+            <form action="/search" method="GET">
+                <p>Search Students</p>
+                <input type="text" name="query" placeholder="Student Name">
+                <button type="submit">Search</button> <br> <br>
+            </form>        
+            <div class="L-Reports">
+                <!--List of Reports -->
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Student Number</th>
+                        <th>Course</th>
+                        <th>Number of Violation</th>
+                    </tr>
+                    <tr>
+                        <td>Gleenn</td>
+                        <td>02000000</td>
+                        <td>BSIT</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Michael</td>
+                        <td>02000000</td>
+                        <td>BSIT</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Garejo</td>
+                        <td>02000000</td>
+                        <td>BSIT</td>
+                        <td>1</td>
+                    </tr>
+                </table>  
+            </div>
+        </div>
+
+        <div class="commService">
+            <table>
+                <tr>
+                    <th>Student Name</th>
+                </tr>
+                <tr>
+                    <td>Gleenn Garejo</td>
+                </tr>
+                <tr>
+                    <td>Sheena Maquiling</td>
+                </tr>
+            </table> <br> 
+            <button class="btnAddCService">Add new Community Service</button>
+        </div>
+    </div>
+</body>
+</html>
