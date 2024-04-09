@@ -3,6 +3,7 @@
     font-weight: 400;
     font-style: normal;
 }
+
 body, html {
     margin: 0;
     padding: 0;
@@ -10,21 +11,25 @@ body, html {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 2.5fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
 }
 
-.user, .dashboard {
+.user, .List {
     padding: 20px;
     background-color: #f0f0f0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.records {
+
+.commService {
     padding: 20px;
     background-color: #f0f0f0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.commService table {
+    margin-top: 210px;
 }
 
 .user {
@@ -36,11 +41,11 @@ body, html {
     justify-content: center;
 }
 
-.dashboard h1{
+.List h1 {
     margin-top: 80px;
 }
 
-.userInfo{
+.userInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,18 +59,22 @@ body, html {
     margin-bottom: 10px;
 }
 
-.userInfo h3{
+.userInfo h3 {
     text-align: center;
 }
 
-.userInfo p{
+.userInfo p {
     margin-top: 0;
+}
+
+.navleft a {
+    text-decoration: none;
 }
 
 .navleft button {
     margin-bottom: 10px;
     display: block;
-    width:  20vh;
+    width: 20vh;
     height: 5vh;
     background-color: #002E51;
     color: #EFEFEF;
@@ -80,10 +89,11 @@ body, html {
     color: #002E51;
     border-color: transparent;
 }
+
 .LogOutBtn {
     margin-top: 20vh;
     display: block;
-    width:  20vh;
+    width: 20vh;
     height: 5vh;
     background-color: #002E51;
     color: #EFEFEF;
@@ -99,65 +109,15 @@ body, html {
     border-color: transparent;
 }
 
-.dashboard h1{
-    margin-top: 80px;
+.List h1 {
+    margin-top: 50px;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-.dashboard button {
-    margin: 10px 0; 
-    padding: 10px 20px; 
-    background-color: transparent; 
-    color: #002E51; 
-    border: 2px solid #002E51; 
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
-}
-
-.dashboard button:hover {
-    background-color: #002E51; 
-    color: #EFEFEF; 
-    border-color: transparent;
-}
-
-
-.uList {
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    height: 64vh;
-}
-.updatedRecords {
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    height: 72.5vh;
-}
-
-.uItems, .recordList {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-}
-
-.uItems:last-child, .recordList:last-child {
-    border-bottom: none;
-}
-
-.uItems p, .recordList p {
-    margin: 0;
-}
-
-.records h4{
+.commService h4 {
     margin-top: 100px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.AvailableUniformsTxt {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -168,4 +128,33 @@ body, html {
     font-weight: 700;
     font-style: normal;
     cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #002E51; 
+    color: #EFEFEF;
+    text-align: center;
+    padding: 8px;
+}
+
+td {
+    border: 2px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+.btnAddCService {
+    margin: 10px 0; 
+    padding: 10px 20px; 
+    background-color: #002E51; 
+    color: #fefefe; 
+    border: 2px solid #002E51; 
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
 }

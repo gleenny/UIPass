@@ -14,7 +14,7 @@
     <div class = "container">
         <div class = "user">
             <div class ="userInfo">
-                <img src = "picture.jpg" alt ="User picture">
+                <img src = "profile1.png" alt ="User picture">
                 <h3 class ="userName">NAME</h3>
                 <p>Disciplinary Officer</p>
                 <br>
@@ -23,11 +23,12 @@
         
             <div class = "navleft">
                 <button>Dashboard</button>
-                <button>List of Report</button>
+                <form action = "Reports.html">
+                    <button>List of Report</button>
+                </form>
                 <button>Temporary ID</button>
                 <button>Uniform Check</button>
                 <button>Settings</button>
-
             </div>
                 <form action = "Login.html">
                     <button class="LogOutBtn">Logout</button>
@@ -44,8 +45,33 @@
                 <div class ="uItems">
                     <p class="AvailableUniformsTxt">Available Uniforms</p>
                     <!--Generate the list of Available Uniforms Announcements-->  
-                    <p>Uniform 1</p>
-                    <p>Uniform 2</p>
+                    <div>
+                        <table>
+                            <tr>
+                                <th>Course</th>
+                                <th>Item Description</th>
+                                <th>Size</th>
+                            </tr>
+
+                            <tr>
+                                <td>BSIT</td>
+                                <td>BSCpE</td>
+                                <td>BSTM</td>
+                            </tr>
+
+                            <tr>
+                                <td>Polo</td>
+                                <td>Blouse</td>
+                                <td>Long Sleeve</td>
+                            </tr>
+
+                            <tr>
+                                <td>Small </td>
+                                <td>Large</td>
+                                <td>Medium</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -55,7 +81,7 @@
             <div class = "updatedRecords">
                 <!--Recent records List-->
                 <!--Generate the new reports list-->
-                <div class = "recordList">
+                <div class = "recordList"> 
                     <p>Record 1</p>
                 </div>
                 <div class = "recordList">
