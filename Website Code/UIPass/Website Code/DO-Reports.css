@@ -1,0 +1,160 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.user, .List {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.commService {
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.commService table {
+    margin-top: 210px;
+}
+
+.user {
+    background-color: #002E51;
+    color: #EFEFEF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.List h1 {
+    margin-top: 80px;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userInfo img {
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%;
+    object-fit: cover; 
+    margin-bottom: 10px;
+}
+
+.userInfo h3 {
+    text-align: center;
+}
+
+.userInfo p {
+    margin-top: 0;
+}
+
+.navleft a {
+    text-decoration: none;
+}
+
+.navleft button {
+    margin-bottom: 10px;
+    display: block;
+    width: 20vh;
+    height: 5vh;
+    background-color: #002E51;
+    color: #EFEFEF;
+    border: 2px solid #002E51;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, font-weight 0.3s ease;
+}
+
+.navleft button:hover {
+    background-color: #fefefe;
+    color: #002E51;
+    border-color: transparent;
+}
+
+.LogOutBtn {
+    margin-top: 20vh;
+    display: block;
+    width: 20vh;
+    height: 5vh;
+    background-color: #002E51;
+    color: #EFEFEF;
+    border: 2px solid #002E51;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, font-weight 0.3s ease;
+}
+
+.LogOutBtn:hover {
+    background-color: #fefefe;
+    color: #002E51;
+    border-color: transparent;
+}
+
+.List h1 {
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.commService h4 {
+    margin-top: 100px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.userName {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #002E51; 
+    color: #EFEFEF;
+    text-align: center;
+    padding: 8px;
+}
+
+td {
+    border: 2px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+.btnAddCService {
+    margin: 10px 0; 
+    padding: 10px 20px; 
+    background-color: #002E51; 
+    color: #fefefe; 
+    border: 2px solid #002E51; 
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+}

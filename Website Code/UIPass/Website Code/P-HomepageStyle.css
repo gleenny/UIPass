@@ -1,0 +1,146 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.LeftContent {
+    background-color: #002E51;
+    color: #EFEFEF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.LeftContent {
+    display: grid;
+    grid-template-rows: .5fr 1.5fr 1fr; /* for vertical */
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    text-align: center;
+}
+/* for item1 */
+.item1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* for IU logo */
+.logo {
+    height: 100px; 
+    object-fit: cover; 
+}
+/* for profile */
+.profile {
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover; 
+}
+/* for bold of name */
+#userName {
+    font-weight: 600;
+    
+}
+/* for item2 */
+.item2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* for each buttons on item2  */
+.item2 button {
+    margin-bottom: 10px;
+    display: block;
+    width:  20vh;
+    height: 5vh;
+    background-color: #002E51;
+    color: #EFEFEF;
+    border: 2px solid #002E51;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, font-weight 0.3s ease;
+}
+/* for hover button on item2 */
+.item2 button:hover {
+    background-color: #fefefe;
+    color: #002E51;
+    border-color: transparent;
+}
+/* for item3 */
+.item3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* for logout button */
+.LogOutBtn {
+    margin-top: 20vh;
+    display: block;
+    width:  20vh;
+    height: 5vh;
+    background-color: #002E51;
+    color: #EFEFEF;
+    border: 2px solid #002E51;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, font-weight 0.3s ease;
+}
+/* for logout hover */
+.LogOutBtn:hover {
+    background-color: #fefefe;
+    color: #002E51;
+    border-color: transparent;
+}
+
+/* for Main Content */
+.MainContent {
+    display: grid;
+    grid-template-rows: .3fr 1fr 1fr 1fr; /* for vertical */
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* for each row */
+.row{
+    display: grid;
+    grid-template-columns: .1fr .1fr .1fr .1fr 5fr; /* for vertical */
+    align-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* each cards */
+.card {
+    padding: 20px;
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+    color: white;
+    background-color: #002E51;   
+    margin-left: 20px;
+    margin-top: 55px;   
+    cursor: pointer;
+}
+/* just for spacing */
+.row p {
+    width: 115px;
+}
